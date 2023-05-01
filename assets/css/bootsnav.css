@@ -242,9 +242,42 @@ li.close-full-menu{
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 435px) and (max-width: 500px) {
     .attr-nav a {
         font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 435px) {
+    .attr-nav a {
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 315px) and (max-width: 375px) {
+    .attr-nav a {
+        font-size: 5px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 285px) and (max-width: 315px) {
+    .attr-nav a {
+        font-size: 4px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 255px) and (max-width: 285px) {
+    .attr-nav a {
+        font-size: 3px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 254px) {
+    .attr-nav a {
+        font-size: 0px;
     }
 }
 
