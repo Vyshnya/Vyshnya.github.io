@@ -851,8 +851,9 @@
       </div>
       <div class="row">
         <div class="col-md-8 col-md-offset-2 contact-form">
-          <form name="contact-form" id="contact-form" action="php/contact.php" method="POST">
-            <div class="messages"></div>
+          <form name="contact-form" id="contact-form" action="assets/php/contact.php" method="POST">
+            <div class="messages">
+            </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
@@ -864,7 +865,7 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <label class="sr-only" for="email">Email</label>
-                  <input type="email" name="email" class="form-control" id="email" placeholder="Ваш Email* (не обов'язково)">
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Ваш Email* (не обов'язково)" required="required" data-error="Please Enter Valid Email">
                   <div class="help-block with-errors"></div>
                 </div>
               </div>
@@ -878,7 +879,7 @@
                 </div>
                 <div class="form-group">
                   <label class="sr-only" for="message">Повідомлення</label>
-                  <textarea name="message" class="form-control" id="message" rows="7" placeholder="Ваше повідомлення* (не обов'язково)"></textarea>
+                  <textarea name="message" class="form-control" id="message" rows="7" placeholder="Ваше повідомлення* (не обов'язково)" required="required" data-error="Please, Leave us a message"></textarea>
                   <div class="help-block with-errors"></div>
                 </div>
                 <div class="text-center">
