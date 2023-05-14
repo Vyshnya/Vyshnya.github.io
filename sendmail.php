@@ -2,11 +2,11 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
-    require 'phpmailer/src/Exception.php';
-    require 'phpmailer/src/PHPMailer.php';
+    require "phpmailer/src/Exception.php";
+    require "phpmailer/src/PHPMailer.php";
 
     $mail = new PHPMailer(true);
-    $mail->CharSet = 'UTF-8';
+    $mail->CharSet = "UTF-8";
     //$mail->setLanguage('uk', 'phpmailer/language/');
     //$mail->IsHTML(true);
 
@@ -16,7 +16,7 @@
     $message = $_POST["message"];
 
     $body = $name . '' . $email . '' . $phone . '' . $message;
-    $theme = "[Exampl]";
+    $theme = "[Заявка]";
 
     $mail->addAddress("dimchuk2002.dv@gmail.com");
 
@@ -61,5 +61,4 @@
     header('Content-type: application/json');
     echo json_encode($response);
     */
-?>
 
