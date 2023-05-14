@@ -6,7 +6,6 @@
 	* ================================================================= */
 	
 
-
 	/* ===== LOADER OVERLAY ===== */
 	
 	 jQuery(function ($) {
@@ -358,8 +357,8 @@
 			},6000);
 	});
 
-    /* ===== CONTACT FORM ===== */
-	 
+    /* ===== CONTACT FORM ===== 
+
 	$(function () {
 
     $('#contact-form').validator();
@@ -367,7 +366,7 @@
     $('#contact-form').on('submit', function (e) {
 
         if (!e.isDefaultPrevented()) {
-            var url = "assets/php/contact.php";
+            var url = "asset/php/sendmail.php";
             $.ajax({
                 type: "POST",
                 url: url,
@@ -388,16 +387,15 @@
         }
 		});
 	});
-	
-	/* ===== SUBSCRIPTION FORM ===== */
-	
+
+	/* ===== SUBSCRIPTION FORM ===== 
 	$(function subscribeForm() {
 
     $('#subscribe-form').validator();
 
 		$('#subscribe-form').on('submit', function (e) {
 			if (!e.isDefaultPrevented()) {
-				var url = "assets/php/subscribe.php";
+				var url = "asset/php/sendmail.php";
 	
 				$.ajax({
 					type: "POST",
@@ -419,7 +417,7 @@
 			}
 		});
 	});
-	
+
 	/* ===== EMBED VIDEO CONTAINER ===== */
 	function videoIframes() {
         $('.embed-container').on('click', function(){
@@ -934,3 +932,5 @@
  });	 
 
 /*End Jquery*/
+
+

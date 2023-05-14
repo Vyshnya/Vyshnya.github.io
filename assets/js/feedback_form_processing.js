@@ -1,3 +1,4 @@
+/*
 "use strict"
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -8,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         
         let formData = new FormData(form);
-        let respanse = await fetch('sendmail.php', {
+        let response = await fetch('assets/php/sendmail.php', {
             method: 'POST',
             body: formData
         });
-        if (respanse.ok) {
-            let result = await respanse.json();
+        if (response.ok) {
+            let result = await response.json();
             alert(result.message);
             formPreview.innerHTML = '';
             form.reset();
@@ -25,3 +26,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
+*/
